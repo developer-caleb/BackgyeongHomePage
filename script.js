@@ -3,6 +3,7 @@ const revealTargets = document.querySelectorAll(
     ".intro > *",
     ".section-heading",
     ".service-card",
+    ".gallery-link",
     ".point-item",
     ".contact > *",
   ].join(",")
