@@ -858,6 +858,18 @@ a {
   font-size: 1.02rem;
 }
 
+.contact-route span {
+  display: inline-flex;
+  margin-bottom: 0.7rem;
+  padding: 0.45rem 0.75rem;
+  color: var(--blue-dark);
+  font-size: 0.95rem;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 111, 238, 0.14);
+  border-radius: 999px;
+}
+
 .contact-route p {
   margin: 0;
   color: var(--muted);

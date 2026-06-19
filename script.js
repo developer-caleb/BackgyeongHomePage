@@ -9,6 +9,15 @@ const revealTargets = document.querySelectorAll(
   ].join(",")
 );
 
+document.querySelectorAll("[data-years-since]").forEach((target) => {
+  const startYear = Number(target.dataset.yearsSince);
+  const currentYear = new Date().getFullYear();
+
+  if (Number.isFinite(startYear) && currentYear >= startYear) {
+    target.textContent = `${currentYear - startYear}년`;
+  }
+});
+
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const openHeroCurtain = () => {
