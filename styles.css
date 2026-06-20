@@ -452,7 +452,7 @@ a {
   box-shadow: 0 14px 36px rgba(11, 37, 69, 0.06);
 }
 
-.service-card span {
+.service-card > span {
   color: var(--blue);
   font-weight: 800;
 }
