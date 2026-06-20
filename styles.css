@@ -23,6 +23,8 @@ body {
   margin: 0;
   font-family: "Noto Sans KR", Arial, sans-serif;
   color: var(--text);
+  word-break: keep-all;
+  overflow-wrap: break-word;
   background:
     radial-gradient(circle at 88% 8%, rgba(0, 111, 238, 0.16), transparent 28rem),
     linear-gradient(180deg, var(--white) 0%, var(--snow) 46%, var(--white) 100%);
@@ -421,7 +423,7 @@ a {
   font-size: clamp(2rem, 4vw, 3.4rem);
 }
 
-.intro p:last-child,
+.intro-copy p,
 .contact p {
   margin: 0;
   color: var(--muted);
@@ -429,8 +431,12 @@ a {
   line-height: 1.9;
 }
 
-.intro > p:last-child {
+.intro-copy {
   margin-top: 8.6rem;
+}
+
+.intro-copy p + p {
+  margin-top: 1.2rem;
 }
 
 .section-heading {
@@ -907,7 +913,7 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .intro > p:last-child {
+  .intro-copy {
     margin-top: 0;
   }
 
